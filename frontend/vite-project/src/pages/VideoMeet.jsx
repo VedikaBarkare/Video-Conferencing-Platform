@@ -16,8 +16,9 @@ import ChatIcon from "@mui/icons-material/Chat";
 
 import "../App.css";
 import Badge from "@mui/material/Badge";
+import server from "../environment";
 
-const server_url = "http://localhost:8000";
+const server_url = server;
 var connections = {};
 
 const peerConfigConnections = {
