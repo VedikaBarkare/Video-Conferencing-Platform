@@ -1,0 +1,261 @@
+.landingPageContainer{
+  height: 100vh;
+  width: 100vw;
+  background: url("./assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.landingPageContainer nav{
+  padding-inline: 1.6rem;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingPageContainer nav h2{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.landingPageContainer nav .nav-list{
+  display: flex;
+  gap: 1.6rem;
+}
+
+.landingMainContainer{
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  align-items: center;
+  padding-inline: 4rem;
+}
+
+.landingMainContainer > div:nth-child(1){
+  font-size: 2rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role = "button"]{
+  background-color: #D97500;
+  width: fit-content;
+  padding: 0.9rem;
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role = "button"] a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+}
+
+/* .meetVideoContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.meetVideoContainer video {
+  width: 300px;   
+  height: 200px;
+  background: black;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.meetVideoContainer > .meetUserVideo{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 150px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 8px;
+  object-fit: cover;
+} */
+
+/* .meetVideoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #111;
+  padding: 10px;
+  min-height: 100vh;
+} */
+
+.meetVideoContainer video {
+  width: 300px;   /* <-- give it size */
+  height: 200px;
+  background: black;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+.meetUserVideo {
+  position: absolute;
+  bottom: 10vh;
+  left: 10px;
+  width: 150px;
+  height: 100px;
+  border: 2px solid white;
+}
+
+.mainContainer {
+  display: flex;
+  height: 100vh; /* Full height */
+  width: 100%;
+}
+
+.meetVideoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  
+  overflow: hidden;
+  padding: 10px;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.conferenceView video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: black;
+}
+
+.singleUserVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  background: black;
+}
+.chatRoom {
+  width: 25%;
+  background: white;
+  border-left: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonContainers {
+  position: fixed;          /* stick to bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;              /* full width */
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black; /* optional bg */
+  z-index: 1000;            /* always above */
+}
+
+/* .buttonContainers {
+  height: 70px; /* fixed height for buttons 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black; /* optional 
+  position: absolute;
+} */
+
+.buttonContainers svg{
+  font-size: 3rem;
+}
+
+.conferenceView {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  height: calc(100vh - 80px); /* leave room for buttons */
+}
+
+
+
+.chatRoom {
+  width: 25%;
+  height: 100%;
+  background: white;
+  border-left: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chattingDisplay {
+  flex: 1; /* take up all remaining space */
+  overflow-y: auto;
+  padding: 10px;
+}
+
+
+.chattingRoom {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  margin-bottom: 70px;  /* reserve space for buttons */
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+}
+
+.meetContainer{
+  display: flex;
+  height: 80vh ;
+  gap: 10vw;
+  justify-content: center;
+  padding: 90px 20px 0 20px;
+
+}
+
+.left-panel{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.right-panel{
+  display: flex;
+  align-items: center;
+}
+
+.right-panel > img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+
+}
