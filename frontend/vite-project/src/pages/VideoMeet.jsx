@@ -465,7 +465,9 @@ export default function VideoMeet() {
     });
 
     socketRef.current.on("connect", () => {
-      socketRef.current.emit("join-call", window.location.href);
+      const meetingCode = window.location.pathname.split("/").pop();
+      socketRef.current.emit("join-call", meetingCode);
+      //socketRef.current.emit("join-call", window.location.href);
       socketIdRef.current = socketRef.current.id;
       socketRef.current.on("chat-message", addMessage);
       // socketRef.current.emit("chat-message", {
