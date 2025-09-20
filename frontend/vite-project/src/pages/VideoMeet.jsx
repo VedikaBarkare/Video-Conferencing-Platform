@@ -616,32 +616,3 @@ export default function VideoMeet() {
     </div>
   );
 }
-
-// {showModal ? (
-//             <div className="chatRoom">
-//               <div className="chatContainer">
-//                 <h1>Chat</h1>
-
-//                 <div className="chattingDisplay">
-//                   {messages.length > 0 ? messages.map((item,index)=>{
-//                     return(
-//                       <div style={{marginBottom: "20px"}} key={index}>
-//                         <p style={{fontWeight: "bold"}}>{item.sender}</p>
-//                         <p>{item.data}</p>
-//                       </div>
-//                     )
-//                   }
-//                 ) : <p>No Messages Yet</p>}
-//                 </div>
-
-//                 <div className="chattingRoom">
-
-//                   <TextField value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter Your Chat" variant="outlined" />
-//                   <Button variant="contained" onClick={sendMessage}>Send</Button>
-//                 </div>
-
-//               </div>
-//             </div>
-//           ) : (
-//             <></>
-//           )}
